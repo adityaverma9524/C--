@@ -36,9 +36,6 @@ int main() {
         it1++;
     }
 }
-//trying github uploading !!
-//another try !!
-
 
 
 
