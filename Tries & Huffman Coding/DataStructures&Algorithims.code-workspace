@@ -1,7 +1,16 @@
 {
+<<<<<<< HEAD
     "folders": [
         {
             "path": "../../.git"
         }
     ]
+=======
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+>>>>>>> 2a8bbd170572c0e45252f7bb01c691f9bc6d2f06
 }
