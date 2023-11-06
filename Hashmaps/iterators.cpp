@@ -28,7 +28,7 @@ int main() {
 
     // find
     unordered_map<string, int>::iterator it2 = ourmap.find("abc");
-    //ourmap.erase(it2, it2 + 4); // Shows error !!  //   
+    //ourmap.erase(it2, it2 + 4); // Shows error !! 
 
     vector<int>::iterator it1 = v.begin();
     while(it1 != v.end()) {
