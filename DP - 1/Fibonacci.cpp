@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int fibo(int n) {
+// Brute Force
+int fibo(int n) { // O(2^n)
     // Base Case
     if(n <= 1) {
         return n;
@@ -36,8 +37,8 @@ int fibo_helper(int n, int *ans) {
     return ans[n];
 }
 
-// Memoization(Top-down approach)
-int fibo_2(int n) {
+// Memoization(Top-down approach)(Recursive)
+int fibo_2(int n) { // O(n)
     int *ans = new int[n + 1];
     for(int i = 0; i <= n; i++) {
         ans[i] = -1;
@@ -46,9 +47,22 @@ int fibo_2(int n) {
     return fibo_helper(n, ans);
 }
 
+// dynamic Programing(Bottom-up approach)(Iterative)
+int fibo_3(int n) { // O(n)
+    int *ans = new int[n + 1];
+    ans[0] = 0;
+    ans[1] = 1;
+    
+    for(int i = 2; i <= n; i++) {
+        ans[i] = ans[i - 1] + ans[i - 2];
+    }
+    return ans[n];
+}
+
 int main() {
     int n;
     cin >> n;
     cout << fibo(n) << endl;
     cout << fibo_2(n) << endl;
+    cout << fibo_3(n) << endl;
 }
