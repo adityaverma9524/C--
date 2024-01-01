@@ -73,5 +73,4 @@ int main() {
     cin >> n;
     cout << "Min Steps to 1 = " << minSteps(n) << endl;
     cout << "Min Steps to 1 = " << minSteps_2(n) << endl;
-
 }
