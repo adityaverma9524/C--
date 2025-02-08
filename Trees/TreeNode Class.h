@@ -18,4 +18,4 @@ class TreeNode {
             delete root->chidlren[i];   
         }
     }
-};
+}; 

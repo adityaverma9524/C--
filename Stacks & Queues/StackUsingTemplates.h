@@ -46,7 +46,7 @@ class StackUsingArray {
         data[nextIndex] = element;
         nextIndex++;
     }
-
+     
     //delete element
     T pop() {
         if(isEmpty()) {
