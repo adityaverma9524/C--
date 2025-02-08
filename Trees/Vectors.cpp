@@ -6,11 +6,11 @@ int main() {
     //vector<int> * vp = new vector<int>();
     vector<int> v;
 
-    for(int i = 0; i < 100; i++) {
-        cout << "cap:" << v.capacity() << endl;
-        cout << "size:" << v.size() << endl;
-        v.push_back(i + 1);
-    }
+    // for(int i = 0; i < 100; i++) {
+    //     cout << "cap:" << v.capacity() << endl;
+    //     cout << "size:" << v.size() << endl;
+    //     v.push_back(i + 1);
+    // }
 
     v.push_back(10);
     v.push_back(20);
